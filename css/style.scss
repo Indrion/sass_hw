@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'NexaBold';
+  src: url('../fonts/NexaBold.eot');
+  src: url('../fonts/NexaBold.eot') format('embedded-opentype'),
+  url('../fonts/NexaBold.woff2') format('woff2'),
+  url('../fonts/NexaBold.woff') format('woff'),
+  url('../fonts/NexaBold.ttf') format('truetype'),
+  url('../fonts/NexaBold.svg#NexaBold') format('svg');
+}
+
+$border_color: #24282f;
+$top_color: rgba(37,41,48,0.96);
+$bottom_color: #2b2f35;
+$white_color: white;
+$light_silver_color: #f7f7f7;
+$yellow_font: #b5a263;
+$gray_font: #6e7279;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header{
+  width: 100%;
+  //padding: 40px 0;
+  background-color: $border_color;
+  a{
+    float: left;
+    margin: 40px 0 0;
+    text-decoration: none;
+    img{
+      width: auto;
+      margin-top: 2px;
+
+    }
+    span{
+      color: $white_color;
+      text-transform: uppercase;
+      margin-left: 32px;
+      font-size: 26px;
+      font-family: 'NexaBold';
+    }
+  }
+  nav{
+    ul{
+      float: right;
+      list-style: none;
+      display: inline-block;
+      margin-top: 45px;
+    }
+    li{
+      float: right;
+      margin-left: 34px;
+    }
+    a:only-child{
+      padding: 0 16px 43px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: solid 2px transparent;
+      color: $white_color;
+      font-size: 14px;
+      font-family: 'NexaBold';
+      margin: 0;
+    }
+    li:hover a{
+      border-color: $yellow_font;
+    }
+  }
+  ul:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
