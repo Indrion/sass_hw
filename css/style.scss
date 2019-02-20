@@ -103,7 +103,7 @@ $gray_font: #6e7279;
   @include max-screen(575px){
     width: auto;
   }
-  @include max-screen(767px){
+  @include max-screen(769px){
     max-width: 720px;
   }
   @include max-screen(1041px){
@@ -123,7 +123,7 @@ header{
   @include max-screen(1041px){
     position: static;
   }
-  @include max-screen(767px){
+  @include max-screen(769px){
       position: static;
   }
   a{
@@ -133,7 +133,7 @@ header{
     @include max-screen(1041px){
       margin: 40px 0 0 40px;
     }
-    @include max-screen(767px){
+    @include max-screen(769px){
         margin: 5px 0 0 5px;
       width: auto;
     }
@@ -177,7 +177,7 @@ header{
       list-style: none;
       display: inline-block;
       margin-top: 45px;
-      @include max-screen(767px){
+      @include max-screen(769px){
         margin: 5px 0 0;
       }
       @include max-screen(575px){
@@ -192,7 +192,7 @@ header{
     li{
       float: right;
       margin-left: 34px;
-      @include max-screen(767px){
+      @include max-screen(769px){
         margin: auto;
       }
       @include max-screen(470px){
@@ -251,7 +251,7 @@ background: $top_color;
       text-transform: uppercase;
       font-size: 40px;
       font-family: 'RalewayBold';
-      @include max-screen(767px){
+      @include max-screen(769px){
         text-align: center;
         font-size: 30px;
       }
@@ -263,7 +263,7 @@ background: $top_color;
       color: $white_color;
       font-size: 14px;
       font-family: 'opensans';
-      @include max-screen(767px){
+      @include max-screen(769px){
         text-align: center;
       }
       @include max-screen(575px){
@@ -281,7 +281,7 @@ background: $top_color;
       left: 27%;
       bottom: 35%;
     }
-    @include max-screen(767px){
+    @include max-screen(769px){
       max-width: 100%;
       margin: auto;
       left: 0;
@@ -298,7 +298,7 @@ background-color: $white_color;
   @include max-screen(1040px){
     padding-top: 90px;
   }
-  @include max-screen(767px){
+  @include max-screen(769px){
     padding-top: 40px;
     margin: auto;
     text-align: center;
@@ -326,7 +326,7 @@ h2{
   margin-right: 5%;
   width: 25%;
   padding-bottom: 40px;
-  @include max-screen(767px){
+  @include max-screen(769px){
     margin-right: 5%;
     width: 20%;
   }
@@ -349,10 +349,10 @@ h2{
     @include max-screen(1041px){
       font-size: 12px;
     }
-    @include max-screen(767px){
+    @include max-screen(769px){
       margin-top: 10px;
       float: none;
-      font-size: 15px;
+      font-size: 12px;
     }
     @include max-screen(470px){
       float: left;
@@ -376,7 +376,7 @@ h2{
     background-color: #dedede;
     margin: 30px 7px 0 0;
     @include border-radius(18px);
-    @include max-screen(767px){
+    @include max-screen(769px){
       margin-top: 10px;
       margin-right: 15px;
       width: 25px;
@@ -393,7 +393,7 @@ h2{
   }
   .fab{
       margin: 10px;
-    @include max-screen(767px){
+    @include max-screen(769px){
       margin: 5px;
     }
   }
@@ -431,7 +431,7 @@ h2{
     background-color: transparent;
   }
   .container{
-    @include max-screen(767px){
+    @include max-screen(769px){
       width: 70%;
     }
     @include max-screen(470px){
@@ -532,7 +532,7 @@ footer{
       background-color: $bottom_color;
       width: auto;
       padding: 80px 0 70px;
-      @include max-screen(767px){
+      @include max-screen(769px){
         padding: 40px 0 30px;
       }
     }
@@ -541,7 +541,7 @@ footer{
     width: 25%;
     float: left;
     margin-right: 5%;
-    @include max-screen(767px){
+    @include max-screen(769px){
       width: 45%;
       float: none;
       margin-right: 4%;
@@ -563,7 +563,7 @@ footer{
       color: #6e7279;
       font-family: 'opensans';
       margin-top: 25px;
-      @include max-screen(767px){
+      @include max-screen(769px){
         margin-top: 25px;
         margin-left: 15px;
         text-align: left;
@@ -576,7 +576,7 @@ footer{
   form{
     width: 30%;
     float: right;
-    @include max-screen(767px){
+    @include max-screen(769px){
       width: 50%;
       float: none;
       margin: auto;
@@ -591,7 +591,7 @@ footer{
       color: $yellow_font;
       font-family: 'opensans';
       text-transform: uppercase;
-      @include max-screen(767px){
+      @include max-screen(769px){
         text-align: center;
       }
     }
@@ -622,7 +622,7 @@ footer{
     font-size: 12px;
     color: #6e7279;
     font-family: 'opensans';
-    @include max-screen(767px){
+    @include max-screen(769px){
       margin-left: 15px;
     }
     @include max-screen(575px){
