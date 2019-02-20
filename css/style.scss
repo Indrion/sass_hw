@@ -106,6 +106,9 @@ $gray_font: #6e7279;
   @include max-screen(767px){
     max-width: 720px;
   }
+  @include max-screen(1041px){
+    max-width: 991px;
+  }
 }
 .container::after{
   content: "";
@@ -117,6 +120,9 @@ header{
   position: absolute;
   background-color: $border_color;
   z-index: 500;
+  @include max-screen(1041px){
+    position: static;
+  }
   @include max-screen(767px){
       position: static;
   }
@@ -124,6 +130,9 @@ header{
     float: left;
     margin: 40px 0 0;
     text-decoration: none;
+    @include max-screen(1041px){
+      margin: 40px 0 0 40px;
+    }
     @include max-screen(767px){
         margin: 5px 0 0 5px;
       width: auto;
@@ -267,6 +276,11 @@ background: $top_color;
     left: 15%;
     max-width: 45%;
     margin-bottom: -30px;
+    @include max-screen(1041px){
+      text-align: center;
+      left: 27%;
+      bottom: 35%;
+    }
     @include max-screen(767px){
       max-width: 100%;
       margin: auto;
@@ -281,6 +295,9 @@ background: $top_color;
 background-color: $white_color;
   width: 100%;
   padding-top: 155px;
+  @include max-screen(1040px){
+    padding-top: 90px;
+  }
   @include max-screen(767px){
     padding-top: 40px;
     margin: auto;
@@ -329,6 +346,9 @@ h2{
     text-transform: uppercase;
     font-size: 16px;
     font-family: 'RalewayMedium';
+    @include max-screen(1041px){
+      font-size: 12px;
+    }
     @include max-screen(767px){
       margin-top: 10px;
       float: none;
@@ -342,6 +362,9 @@ h2{
       font-size: 14px;
       color: $yellow_font;
       font-family: 'opensans';
+      @include max-screen(1041px){
+        font-size: 10px;
+      }
     }
   }
   a{

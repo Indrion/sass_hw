@@ -45,6 +45,9 @@
   @media screen and (max-width: 767px) {
     .container {
       max-width: 720px; } }
+  @media screen and (max-width: 1041px) {
+    .container {
+      max-width: 991px; } }
 
 .container::after {
   content: "";
@@ -56,6 +59,9 @@ header {
   position: absolute;
   background-color: #24282f;
   z-index: 500; }
+  @media screen and (max-width: 1041px) {
+    header {
+      position: static; } }
   @media screen and (max-width: 767px) {
     header {
       position: static; } }
@@ -63,6 +69,9 @@ header {
     float: left;
     margin: 40px 0 0;
     text-decoration: none; }
+    @media screen and (max-width: 1041px) {
+      header a {
+        margin: 40px 0 0 40px; } }
     @media screen and (max-width: 767px) {
       header a {
         margin: 5px 0 0 5px;
@@ -190,6 +199,11 @@ section {
     left: 15%;
     max-width: 45%;
     margin-bottom: -30px; }
+    @media screen and (max-width: 1041px) {
+      section .container {
+        text-align: center;
+        left: 27%;
+        bottom: 35%; } }
     @media screen and (max-width: 767px) {
       section .container {
         max-width: 100%;
@@ -203,6 +217,9 @@ section {
   background-color: white;
   width: 100%;
   padding-top: 155px; }
+  @media screen and (max-width: 1040px) {
+    .section_2 {
+      padding-top: 90px; } }
   @media screen and (max-width: 767px) {
     .section_2 {
       padding-top: 40px;
@@ -247,6 +264,9 @@ section {
       text-transform: uppercase;
       font-size: 16px;
       font-family: 'RalewayMedium'; }
+      @media screen and (max-width: 1041px) {
+        .section_2 .block p {
+          font-size: 12px; } }
       @media screen and (max-width: 767px) {
         .section_2 .block p {
           margin-top: 10px;
@@ -260,6 +280,9 @@ section {
         font-size: 14px;
         color: #b5a263;
         font-family: 'opensans'; }
+        @media screen and (max-width: 1041px) {
+          .section_2 .block p span {
+            font-size: 10px; } }
     .section_2 .block a {
       float: right;
       width: 34px;
