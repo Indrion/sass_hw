@@ -1,4 +1,6 @@
 @import url(all.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
 @font-face {
   font-family: 'NexaBold';
   src: url("../fonts/NexaBold.eot");
@@ -19,6 +21,14 @@
   font-family: 'RalewaySemiBold';
   src: url("../fonts/RalewaySemiBold.eot");
   src: url("../fonts/RalewaySemiBold.eot") format("embedded-opentype"), url("../fonts/RalewaySemiBold.woff2") format("woff2"), url("../fonts/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold.ttf") format("truetype"), url("../fonts/RalewaySemiBold.svg#RalewaySemiBold") format("svg"); }
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../fonts/OpenSansLight.eot");
+  src: url("../fonts/OpenSansLight.eot") format("embedded-opentype"), url("../fonts/OpenSansLight.woff2") format("woff2"), url("../fonts/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight.ttf") format("truetype"), url("../fonts/OpenSansLight.svg#OpenSansLight") format("svg"); }
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url("../fonts/OpenSansSemibold.eot");
+  src: url("../fonts/OpenSansSemibold.eot") format("embedded-opentype"), url("../fonts/OpenSansSemibold.woff2") format("woff2"), url("../fonts/OpenSansSemibold.woff") format("woff"), url("../fonts/OpenSansSemibold.ttf") format("truetype"), url("../fonts/OpenSansSemibold.svg#OpenSansSemibold") format("svg"); }
 * {
   margin: 0;
   padding: 0;
@@ -101,72 +111,135 @@ section {
     max-width: 45%;
     margin-bottom: -30px; }
 
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-family: 'RalewaySemiBold';
-  margin: 155px 0 30px; }
-
-.line {
-  display: block;
-  width: 80px;
-  border-top: solid 2px #b5a263;
-  margin: auto;
-  padding-bottom: 34px;
-  background-color: transparent; }
-
-.block {
-  display: inline-block;
-  margin-right: 5%;
-  width: 25%;
-  padding-bottom: 40px; }
-  .block img {
-    width: 100%; }
-  .block p {
-    float: left;
-    display: block;
-    margin-top: 30px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'RalewayMedium'; }
-    .block p span {
-      text-transform: none;
-      font-size: 14px;
-      color: #b5a263;
-      font-family: 'opensans'; }
-  .block a {
-    float: right;
-    width: 34px;
-    height: 34px;
+.section_2 {
+  background-color: white;
+  width: 100%;
+  padding-top: 155px;
+  position: static; }
+  .section_2 h2 {
     text-align: center;
-    font-size: 15px;
-    background-color: #dedede;
-    margin: 30px 7px 0 0;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    border-radius: 18px; }
-  .block .fab {
-    margin: 10px; }
-  .block p:last-child {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'RalewaySemiBold';
+    margin: 0 0 30px; }
+  .section_2 .line {
+    display: block;
+    width: 80px;
+    border-top: solid 2px #b5a263;
+    margin: auto;
+    padding-bottom: 34px;
+    background-color: transparent; }
+  .section_2 .block {
+    display: inline-block;
+    margin-right: 5%;
+    width: 25%;
+    padding-bottom: 40px; }
+    .section_2 .block img {
+      width: 100%; }
+    .section_2 .block p {
+      float: left;
+      display: block;
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: 'RalewayMedium'; }
+      .section_2 .block p span {
+        text-transform: none;
+        font-size: 14px;
+        color: #b5a263;
+        font-family: 'opensans'; }
+    .section_2 .block a {
+      float: right;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      font-size: 15px;
+      background-color: #dedede;
+      margin: 30px 7px 0 0;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      -ms-border-radius: 18px;
+      border-radius: 18px; }
+    .section_2 .block .fab {
+      margin: 10px; }
+    .section_2 .block p:last-child {
+      text-transform: uppercase; }
+  .section_2 .btn {
+    max-width: 165px;
+    line-height: 48px;
+    background-color: transparent;
+    display: block;
+    border: solid 1px black;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'opensans';
+    margin: auto; }
 
-.btn {
-  max-width: 165px;
-  line-height: 48px;
-  background-color: transparent;
-  display: block;
-  border: solid 1px black;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  border-radius: 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: 'opensans';
-  margin: auto; }
+.section_3 {
+  padding: 120px 0;
+  width: 100%;
+  position: static;
+  background-color: #f7f7f7; }
+  .section_3 .avatar {
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    background-image: url("../images/Layer 23.png"); }
+  .section_3 p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: "OpenSansLight"; }
+  .section_3 h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #b5a263;
+    margin-top: 48px;
+    font-family: 'OpenSansSemibold'; }
+  .section_3 .owl-nav .owl-prev:after {
+    display: block;
+    content: "";
+    /*font-size: 25px;*/
+    color: black;
+    border: solid black 2px;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 10px; }
+  .section_3 .owl-nav .owl-prev {
+    position: absolute;
+    top: 45%;
+    right: 100%;
+    margin-right: 50px;
+    outline: none; }
+  .section_3 .owl-nav .owl-next:after {
+    display: block;
+    content: "";
+    /*font-size: 25px;*/
+    color: black;
+    border: solid black 2px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px; }
+  .section_3 .owl-nav .owl-next {
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    margin-left: 50px;
+    outline: none; }
+  .section_3 p:last-child {
+    margin: auto;
+    font-family: 'opensans';
+    padding-top: 14px; }
 
 /*# sourceMappingURL=style.css.map */
