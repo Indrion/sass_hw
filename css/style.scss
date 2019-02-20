@@ -323,3 +323,85 @@ h2{
     padding-top: 14px;
   }
 }
+footer{
+  background-color: $border_color;
+    .background{
+      background-color: $bottom_color;
+      width: auto;
+      padding: 80px 0 70px;
+    }
+  .block{
+    display: inline-block;
+    width: 25%;
+    float: left;
+    margin-right: 5%;
+    h3{
+      font-size: 14px;
+      color: $yellow_font;
+      font-family: 'OpenSansSemibold';
+    }
+    p{
+      font-size: 14px;
+      color: #6e7279;
+      font-family: 'opensans';
+      margin-top: 25px;
+    }
+  }
+  form{
+    width: 30%;
+    float: right;
+    label{
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      color: $yellow_font;
+      font-family: 'opensans';
+      text-transform: uppercase;
+    }
+    input{
+      margin-top: 25px;
+      width: 100%;
+      text-indent: 1.5em;
+      line-height: 35px;
+      color: #6e7279;
+      border: solid 1px #6e7279;
+      background-color: transparent;
+    }
+    button{
+      width: 100%;
+      line-height: 35px;
+      margin-top: 12px;
+      background-color: $yellow_font;
+      color: $white_color;
+      font-size: 14px;
+      font-family: 'opensans';
+      text-transform: uppercase;
+      border: $yellow_font;
+    }
+  }
+  p{
+    float: left;
+    margin: 27px 0 30px;
+    font-size: 12px;
+    color: #6e7279;
+    font-family: 'opensans';
+  }
+  a{
+    float: right;
+    width: 32px;
+    line-height: 32px;
+    @include border-radius(16px);
+    color: #6e7279;
+    background-color: transparent;
+    border: solid 1px #6e7279;
+    font-size: 15px;
+    text-align: center;
+    margin: 17px 5px 0 15px;
+  }
+  a:hover{
+    color: $white_color;
+    background-color: $yellow_font;
+    border: solid 1px transparent;
+  }
+}
+
