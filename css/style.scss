@@ -100,8 +100,11 @@ $gray_font: #6e7279;
 .container{
   max-width: 1170px;
   margin: auto;
+  @include max-screen(575px){
+    width: auto;
+  }
   @include max-screen(767px){
-    width: 100%;
+    max-width: 720px;
   }
 }
 .container::after{
@@ -125,6 +128,19 @@ header{
         margin: 5px 0 0 5px;
       width: auto;
     }
+    @include max-screen(575px){
+      display: block;
+      margin: auto;
+      text-align: center;
+      float: none;
+    }
+    @include max-screen(470px){
+      display: block;
+      margin: 35px 0 0;
+      text-align: center;
+      float: left;
+      width: 54%;
+    }
     img{
       width: auto;
       margin-top: 2px;
@@ -139,6 +155,14 @@ header{
     }
   }
   nav{
+    @include max-screen(575px){
+      text-align: center;
+    }
+    @include max-screen(470px){
+      text-align: center;
+      width: 30%;
+      float: right;
+    }
     ul{
       float: right;
       list-style: none;
@@ -147,6 +171,13 @@ header{
       @include max-screen(767px){
         margin: 5px 0 0;
       }
+      @include max-screen(575px){
+        float: none;
+        text-align: center;
+      }
+      @include max-screen(470px){
+        float: left;
+      }
 
     }
     li{
@@ -154,6 +185,9 @@ header{
       margin-left: 34px;
       @include max-screen(767px){
         margin: auto;
+      }
+      @include max-screen(470px){
+        float: left;
       }
     }
     a:first-child{
@@ -165,6 +199,16 @@ header{
       font-size: 14px;
       font-family: 'NexaBold';
       margin: 0;
+      @include max-screen(575px){
+        padding-bottom: 15px;
+      }
+      @include max-screen(470px){
+        padding: 0 15px 0px;
+        border-top: solid 2px transparent;
+        border-left: solid 2px transparent;
+        font-size: 12px;
+        border-bottom: none;
+      }
     }
     li:hover a{
       border-color: #b5a263;
@@ -180,10 +224,17 @@ section{
 background: $top_color;
   position: relative;
   width: 100%;
+  @include max-screen(575px){
+    background-color: rgba(37,41,48,1);
+    border-top: solid 1px $yellow_font;
+  }
   img{
     width: 100%;
     position: relative;
     z-index: -1;
+    @include max-screen(575px){
+      display: none;
+    }
   }
 
     h1{
@@ -195,6 +246,9 @@ background: $top_color;
         text-align: center;
         font-size: 30px;
       }
+      @include max-screen(575px){
+        font-size: 20px;
+      }
     }
     p{
       color: $white_color;
@@ -202,6 +256,9 @@ background: $top_color;
       font-family: 'opensans';
       @include max-screen(767px){
         text-align: center;
+      }
+      @include max-screen(575px){
+        font-size: 10px;
       }
   }
   .container{
@@ -214,6 +271,9 @@ background: $top_color;
       max-width: 100%;
       margin: auto;
       left: 0;
+    }
+    @include max-screen(575px){
+      position: static;
     }
   }
   }
@@ -250,6 +310,12 @@ h2{
     margin-right: 5%;
     width: 20%;
   }
+  @include max-screen(470px){
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: solid 2px $yellow_font;
+    display: block;
+  }
   img{
     width: 100%;
   }
@@ -263,6 +329,10 @@ h2{
     @include max-screen(767px){
       margin-top: 10px;
       float: none;
+      font-size: 15px;
+    }
+    @include max-screen(470px){
+      float: left;
     }
     span{
       text-transform: none;
@@ -282,11 +352,20 @@ h2{
     @include border-radius(18px);
     @include max-screen(767px){
       margin-top: 10px;
-      margin-left: 10px;
+      margin-right: 15px;
+      width: 25px;
+      height: 25px;
+    }
+    @include max-screen(575px){
+      margin-right: 1px;
+      margin-left: 0;
     }
   }
   .fab{
       margin: 10px;
+    @include max-screen(767px){
+      margin: 5px;
+    }
   }
 }
 .btn{
@@ -320,6 +399,18 @@ h2{
     @include max-screen(767px){
       width: 70%;
     }
+    @include max-screen(470px){
+      width: 51%;
+    }
+    .owl-carousel.owl-loaded{
+      @include max-screen(470px){
+        display: block;
+        max-height: 100%;
+      }
+    }
+    .owl-item:active{
+      width: 163px;
+    }
   }
   h2{
     text-align: center;
@@ -339,7 +430,11 @@ h2{
    text-align: center;
     margin-top: 40px;
     font-size: 14px;
-    font-family: 'OpenSansLight'
+    font-family: 'OpenSansLight';
+    @include max-screen(470px){
+      text-align: left;
+      font-size: 10px;
+    }
   }
   h3{
     text-align: center;
@@ -347,6 +442,9 @@ h2{
     color: $yellow_font;
     margin-top: 48px;
     font-family: 'OpenSansSemibold';
+    @include max-screen(470px){
+      text-align: left;
+    }
 
   }
   .owl-nav .owl-prev:after{
@@ -364,7 +462,7 @@ h2{
   .owl-nav .owl-prev{
     position: absolute;
     top: 45%;
-    right: 100%;
+    right: 95%;
     margin-right: 50px;
     outline: none;
   }
@@ -383,7 +481,7 @@ h2{
   .owl-nav .owl-next{
     position: absolute;
     top: 45%;
-    left: 100%;
+    left: 95%;
     margin-left: 50px;
     outline: none;
   }
@@ -414,10 +512,16 @@ footer{
       margin-right: 4%;
       text-align: center;
     }
+    @include max-screen(470px){
+          display: none;
+    }
     h3{
       font-size: 14px;
       color: $yellow_font;
       font-family: 'OpenSansSemibold';
+      @include max-screen(575px){
+        font-size: 12px;
+      }
     }
     p{
       font-size: 14px;
@@ -429,6 +533,9 @@ footer{
         margin-left: 15px;
         text-align: left;
       }
+      @include max-screen(575px){
+        font-size: 9px;
+      }
     }
   }
   form{
@@ -438,6 +545,9 @@ footer{
       width: 50%;
       float: none;
       margin: auto;
+    }
+    @include max-screen(470px){
+        width: 90%;
     }
     label{
       display: block;
@@ -480,6 +590,9 @@ footer{
     @include max-screen(767px){
       margin-left: 15px;
     }
+    @include max-screen(575px){
+      font-size: 8px;
+    }
   }
   a{
     float: right;
@@ -492,6 +605,12 @@ footer{
     font-size: 15px;
     text-align: center;
     margin: 17px 5px 0 15px;
+    @include max-screen(470px){
+      float: right;
+      width: 25px;
+      line-height: 25px;
+      margin: 17px 10px 0 0;
+    }
   }
   a:hover{
     color: $white_color;
