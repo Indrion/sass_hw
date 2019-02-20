@@ -208,6 +208,8 @@ section {
       padding-top: 40px;
       margin: auto;
       text-align: center; } }
+  .section_2 .container {
+    text-align: center; }
   .section_2 h2 {
     text-align: center;
     text-transform: uppercase;
@@ -280,6 +282,9 @@ section {
         .section_2 .block a {
           margin-right: 1px;
           margin-left: 0; } }
+    .section_2 .block a:hover {
+      color: white;
+      background-color: #b5a263; }
     .section_2 .block .fab {
       margin: 10px; }
       @media screen and (max-width: 767px) {
@@ -301,6 +306,10 @@ section {
     text-transform: uppercase;
     font-family: 'opensans';
     margin: auto; }
+  .section_2 .btn:hover {
+    color: white;
+    background-color: #b5a263;
+    border: transparent; }
 
 .section_3 {
   padding: 120px 0;

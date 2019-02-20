@@ -286,6 +286,9 @@ background-color: $white_color;
     margin: auto;
     text-align: center;
   }
+  .container{
+    text-align: center;
+  }
 h2{
   text-align: center;
   text-transform: uppercase;
@@ -361,6 +364,10 @@ h2{
       margin-left: 0;
     }
   }
+  a:hover{
+    color: $white_color;
+    background-color: $yellow_font;
+  }
   .fab{
       margin: 10px;
     @include max-screen(767px){
@@ -382,6 +389,11 @@ h2{
   font-family: 'opensans';
   margin: auto;
 }
+  .btn:hover{
+    color: $white_color;
+    background-color: $yellow_font;
+    border: transparent;
+  }
 }
 .section_3{
   padding: 120px 0;
