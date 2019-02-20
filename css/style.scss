@@ -25,6 +25,32 @@
   url('../fonts/opensans.ttf') format('truetype'),
   url('../fonts/opensans.svg#opensans') format('svg');
 }
+@font-face {
+  font-family: 'RalewayMedium';
+  src: url('../fonts/RalewayMedium.eot');
+  src: url('../fonts/RalewayMedium.eot') format('embedded-opentype'),
+  url('../fonts/RalewayMedium.woff2') format('woff2'),
+  url('../fonts/RalewayMedium.woff') format('woff'),
+  url('../fonts/RalewayMedium.ttf') format('truetype'),
+  url('../fonts/RalewayMedium.svg#RalewayMedium') format('svg');
+}
+@font-face {
+  font-family: 'RalewaySemiBold';
+  src: url('../fonts/RalewaySemiBold.eot');
+  src: url('../fonts/RalewaySemiBold.eot') format('embedded-opentype'),
+  url('../fonts/RalewaySemiBold.woff2') format('woff2'),
+  url('../fonts/RalewaySemiBold.woff') format('woff'),
+  url('../fonts/RalewaySemiBold.ttf') format('truetype'),
+  url('../fonts/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
+}
+
+@import "all.css";
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 
 $border_color: #24282f;
 $top_color: rgba(37,41,48,0.96);
@@ -132,4 +158,72 @@ background: $top_color;
     margin-bottom: -30px;
   }
   }
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'RalewaySemiBold';
+  margin: 155px 0 30px;
+}
+.line{
+  display: block;
+  width: 80px;
+  border-top:  solid 2px $yellow_font;
+  margin: auto;
+  padding-bottom: 34px;
+  background-color: transparent;
+}
+.block{
+  display: inline-block;
+  margin-right: 5%;
+  width: 25%;
+  padding-bottom: 40px;
+  img{
+    width: 100%;
+  }
+  p{
+    float: left;
+    display: block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'RalewayMedium';
+    span{
+      text-transform: none;
+      font-size: 14px;
+      color: $yellow_font;
+      font-family: 'opensans';
+    }
+  }
+  a{
+    float: right;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #dedede;
+    margin: 30px 7px 0 0;
+    @include border-radius(18px);
+  }
+  .fab{
+      margin: 10px;
+  }
+  p:last-child{
+    text-transform: uppercase;
+  }
+}
+.btn{
+  max-width: 165px;
+  line-height: 48px;
+  background-color: transparent;
+  display: block;
+  border: solid 1px black;
+  @include border-radius(25px);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'opensans';
+  margin: auto;
+}
 
