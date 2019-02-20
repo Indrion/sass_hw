@@ -2,6 +2,14 @@
   font-family: 'NexaBold';
   src: url("../fonts/NexaBold.eot");
   src: url("../fonts/NexaBold.eot") format("embedded-opentype"), url("../fonts/NexaBold.woff2") format("woff2"), url("../fonts/NexaBold.woff") format("woff"), url("../fonts/NexaBold.ttf") format("truetype"), url("../fonts/NexaBold.svg#NexaBold") format("svg"); }
+@font-face {
+  font-family: 'RalewayBold';
+  src: url("../fonts/RalewayBold.eot");
+  src: url("../fonts/RalewayBold.eot") format("embedded-opentype"), url("../fonts/RalewayBold.woff2") format("woff2"), url("../fonts/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold.ttf") format("truetype"), url("../fonts/RalewayBold.svg#RalewayBold") format("svg"); }
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/opensans.eot");
+  src: url("../fonts/opensans.eot") format("embedded-opentype"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.ttf") format("truetype"), url("../fonts/opensans.svg#opensans") format("svg"); }
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +28,9 @@
 
 header {
   width: 100%;
-  background-color: #24282f; }
+  position: absolute;
+  background-color: #24282f;
+  z-index: 500; }
   header a {
     float: left;
     margin: 40px 0 0;
@@ -42,7 +52,7 @@ header {
   header nav li {
     float: right;
     margin-left: 34px; }
-  header nav a:only-child {
+  header nav a:first-child {
     padding: 0 16px 43px;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,5 +67,29 @@ header {
     content: "";
     display: block;
     clear: both; }
+
+section {
+  background: rgba(37, 41, 48, 0.96);
+  position: relative;
+  width: 100%; }
+  section img {
+    width: 100%;
+    position: relative;
+    z-index: -1; }
+  section h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'RalewayBold'; }
+  section p {
+    color: white;
+    font-size: 14px;
+    font-family: 'opensans'; }
+  section .container {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    max-width: 45%;
+    margin-bottom: -30px; }
 
 /*# sourceMappingURL=style.css.map */
